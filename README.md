@@ -63,14 +63,15 @@ i 是你当前的能力 在这个难度基础上再 +1 就是适合你的项目
 ### 1. 安装项目依赖
 
 ```bash
-# 或者使用 pnpm i
-pnpm bootstrap 
+yarn install
 ```
 ### 2. 启动后端服务
 
 ```bash
-pnpm docker:be
+yarn docker:be
 ```
+
+> 如果拉取docker镜像源超时，可以尝试手动拉取 `docker pull node:18.16.0`
 
 通过 docker 来启动后端服务以及 mongoDB 服务
 
